@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tp-entorno:
+    build: .
+    image: tp-entorno
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./datasets:/app/datasets
