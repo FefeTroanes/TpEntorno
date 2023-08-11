@@ -1,7 +1,5 @@
 #!/bin/bash
 
-touch ./datasets/caca.txt
-
 PS3="Elija una tarea : "
 OPCIONES=( "Generar imágenes" "Descomprimir imágenes" "Procesar imágenes" "Comprimir imágenes" "Salir" )
 select OPT in "${OPCIONES[@]}"

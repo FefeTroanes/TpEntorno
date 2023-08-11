@@ -14,7 +14,7 @@ ARCHIVO_VERIFICACION="$ARCHIVO_VERIFICACION.tar.gz.sha256"
 
 # Busqueda de archivos
 FLAG=0
-if [ -f "../datasets/$ARCHIVO_DESCOMPRIMIR" ]
+if [ -f "./datasets/$ARCHIVO_DESCOMPRIMIR" ]
 then
   echo "tar.gz encontrado"
 else
@@ -22,7 +22,7 @@ else
   (( FLAG+=1 ))
 fi
 
-if [ -f "../datasets/$ARCHIVO_VERIFICACION" ]
+if [ -f "./datasets/$ARCHIVO_VERIFICACION" ]
 then
   echo "tar.gz.sha256 encontrado"
 else
@@ -31,14 +31,16 @@ else
 fi
 
 # Control de verificacion
-PARA_VERIFICAR1=$(sha256sum ../datasets/$ARCHIVO_DESCOMPRIMIR)
-PARA_VERIFICAR2=$(cat ../datasets/$ARCHIVO_VERIFICACION)
+PARA_VERIFICAR1=$(sha256sum ./datasets/$ARCHIVO_DESCOMPRIMIR)
+PARA_VERIFICAR2=$(cat ./datasets/$ARCHIVO_VERIFICACION)
 
 if [ "$PARA_VERIFICAR1" == "$PARA_VERIFICAR2" ]
 then
   echo "Descomprimiendo..."
-  mkdir -p ../datasets/descomprimido
-  tar -zxvf ../datasets/$ARCHIVO_DESCOMPRIMIR -C ../datasets/descomprimido
+  mkdir -p ./datasets/descomprimido
+  tar -zxvf ./datasets/$ARCHIVO_DESCOMPRIMIR -C ../datasets/descomprimido
 else
   echo "La suma de verificacion no coincide con el archivo indicado."
 fi
+
+bash ./scripts/menu.sh

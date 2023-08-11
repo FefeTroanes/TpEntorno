@@ -5,3 +5,8 @@ Generar.sh
 
 Descomprimi.sh
 - Validar el ingreso de los archivos (while true bla bla...)
+
+
+docker build -t tp-entorno .
+
+docker run -it -v ./datasets:/app/datasets tp-entorno
