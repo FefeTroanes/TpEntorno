@@ -101,26 +101,21 @@ Debe incluirse un menú para elegir cada una de las opciones anteriores.
 - Docker (Contenedorización)
 - Git (Control de versiones)
 - ImageMagick (Manipulación de imágenes)
-- Flask (Framework web para generar y descargar imágenes a través de un servicio web)
-
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-Programación bash
-Manejo de control de versiones (Git)
-Uso de contenedores (Docker)
-Generación de documentación
+- Tener docker engine instalado
+- Git (en el caso de windows)
 
 ### Installation
 
 1. Clona este repositorio en tu máquina local:
-```git clone https://github.com/Zeusven/TpEntorno.git```
+```git clone https://github.com/FefeTroanes/TpEntorno.git```
 2. Asegúrate de tener Docker instalado en tu sistema. Puedes encontrar instrucciones de instalación en la [documentación oficial de Docker](https://docs.docker.com/get-docker/).
+3. En la misma terminal moverse al directorio TpEntorno con ```cd TpEntorno/```
+4. Ejecutar el archivo inicial con ```./ejecutar.sh```
 
 ## Usage
 
@@ -167,7 +162,8 @@ Copy code
 - README.md
 - Archivo generador de imagenes
 - Archivo para descomprimir las imagenes
--
+- Archivo para procesar las imagenes
+- Archivo para comprimir las imagenes
 
 
 ## Authors
@@ -179,4 +175,4 @@ Copy code
 * [ShaanCoding](https://github.com/ShaanCoding/)
 * [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
 * [ImgShields](https://shields.io/)
-* [OpenAI GPT-3.5: Agradecemos a OpenAI y su modelo de lenguaje GPT-3.5, el cual ha brindado asistencia en la generación de contenido y respuestas durante el desarrollo de este proyecto.](https://chat.openai.com/)
+* [OpenAI GPT-3.5: Agradezco a OpenAI y su modelo de lenguaje GPT-3.5, el cual ha brindado asistencia en la generación de contenido y respuestas durante el desarrollo de este proyecto.](https://chat.openai.com/)
