@@ -14,12 +14,12 @@
 </p>
 
 
-<p>
+<p align="center">
   <a href="https://github.com/Zeusven/TpEntorno/graphs/contributors">
-    <img src="https://img.shields.io/badge/Contributors-3-red" alt="contributors" />
+    <img src="https://img.shields.io/badge/Contributors-1-red" alt="contributors" />
   </a>
   <a href="https://github.com/Zeusven/TpEntorno/commits/main">
-    <img src="https://img.shields.io/badge/Commits-437-brightgreen" alt="commits" />
+    <img src="https://img.shields.io/badge/Commits-36-brightgreen" alt="commits" />
   </a>
   <a href="https://github.com/Zeusven/TpEntorno/network/members" alt="forks">
     <img src="https://img.shields.io/badge/Forks-0-blue">
